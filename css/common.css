@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Stem';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('../fonts/embedded-opentype'),
+        url('../fonts/Stem-Regular.woff2') format('woff2'),
+        url('../fonts/Stem-Regular.woff') format('woff'),
+        url('../fonts/Stem-Regular.ttf') format('truetype'),
+        url('../fonts/Stem-Regular.svg#Stem-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{box-sizing: border-box; font-family: 'Stem';}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+/* header part */
+#header{
+    position: fixed;
+    z-index: 2;
+    width: 100%; height: 70px;
+    transition: height 0.5s;
+}
+#header.active{
+    height: 50px;
+    transition: height 0.5s;
+}
+#header header{
+    top: 0; left: 0;
+    background-color: #fff;
+}
+#header header .wrap{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#header header .wrap .logo{
+    width: 300px; height: 115px;
+    background-image: url(../img/logo-img1.png);
+    position: absolute;
+    top: 0; left: -70px;
+    transition: height 0.5s, left 0.5s;
+}
+#header.active header .wrap .logo{
+    height: 0;
+    left: 0; 
+    transition: height 0.5s, left 0.5s;
+}
+#header header .wrap .logo a{
+    display: block;
+}
+#header header .wrap .logo a img{
+    display: block;
+    height: 88px;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    transition: height 0.5s;
+}
+#header.active header .wrap .logo a img{
+    height: 50px;
+    transition: height 0.5s;
+}
+#header header .wrap .menu{
+    display: flex;
+}
+#header header .wrap .menu ul{
+    display: flex;
+    justify-content: center;
+}
+#header header .wrap .menu ul li{margin: 0 15px;}
+#header header .wrap .menu ul li.active a{color: #755562;}
+#header header .wrap .menu ul li a{
+    display: block;
+    color: #5c5c5c;
+    font-size: 16px;
+    text-transform:capitalize;
+    font-weight: bold;
+    line-height: 70px;
+    transition: color 0.5s,line-height 0.5s;
+}
+#header.active header .wrap .menu ul li a{
+    line-height: 50px;
+    transition: line-height 0.5s;
+}
+#header header .wrap .menu ul li:hover a{
+    color: #755562;
+}
+#header header .wrap .menu ul li a:after{
+    display: block;
+    content: "";
+    width: 0%; height: 2px;
+    background-color: #755562;
+    transition: width 0.5s;
+}
+#header header .wrap .menu ul li:hover a:after{width: 100%;}
+
+
+#header header .wrap .create_button{
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translateY(-50%);
+}
+#header header .wrap .create_button button{
+    width: 180px; height: 30px;
+    background-color: #5e889e;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+#header header .wrap .create_button:hover button{
+    background-color: #9999;
+    color: #755562;
+}
+
+
+
+
+/* footer part */
+#footer{}
+#footer footer{
+    width: 100%; height: 160px;
+    background-color: #5c5c5c;
+}
+#footer footer .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#footer footer .wrap .text_part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#footer footer .wrap .text_part p{
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer footer .wrap .sns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#footer footer .wrap .sns ul{display: flex;}
+#footer footer .wrap .sns ul li{margin: 0 10px;}
+#footer footer .wrap .sns ul li:last-child{margin-right: 0;}
+#footer footer .wrap .sns ul li a{display: block;}
+#footer footer .wrap .sns ul li a img{
+    display: block;
+    height: 35px;
+    filter: invert(0);
+    transition: filter 0.5s;
+}
+#footer footer .wrap .sns ul li:hover a img{filter: invert(20%);}

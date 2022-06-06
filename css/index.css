@@ -1,0 +1,262 @@
+@charset "utf-8";
+main{
+    height: 830px;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+main .cloud{
+    width: 100%; height: 100%;
+    background-image: url(../img/cloud.png);
+    background-position: 0% 130%;
+    background-repeat: no-repeat;
+    animation: 160s moveCloud infinite linear;
+    position: relative;
+}
+@keyframes moveCloud{
+    0%{background-position: 0% 130%;}
+    50%{background-position: 100% 130%;}
+    100%{background-position: 0% 130%;}
+}
+
+main .wrap{
+    width: 1200px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+main .wrap .main_txt{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+main .wrap .main_txt p{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main .wrap .main_txt h2{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+main .wrap .main_txt h2 span{
+    font-size: 48px;
+    text-transform: uppercase;
+}
+main .wrap .main_btn{
+    display: flex;
+    justify-content: center;
+}
+main .wrap .main_btn button{
+    width: 160px;
+    margin: 0 20px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5e889e;
+    line-height: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.5s, color 0.5s;
+}
+main .wrap .main_btn button:hover{
+    background-color: #9999;
+    color: #755562;
+}
+
+
+
+
+#sec1{margin-bottom: 40px;}
+#sec1 .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#sec1 .wrap .cont{display: flex;}
+#sec1 .wrap .cont .box{
+    width: calc((100% - 40px) / 3 );
+    text-align: center;
+    color: #5c5c5c;
+    padding-bottom: 10px;
+}
+#sec1 .wrap .cont .box img{
+    display: block;
+    margin: 0 auto;
+}
+#sec1 .wrap .cont .box h4{
+    font-size: 18px;
+    line-height: 1;
+    padding: 20px 0;
+}
+#sec1 .wrap .cont .box p{font-size: 14px;}
+
+/* sec2 */
+#sec2{
+    width: 100%; height: 200px;
+    background-attachment: fixed;
+    background-image: url(../img/Investment-Performance-Banner-650.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#sec2 .dark{
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#sec2 .dark .wrap{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sec2 .dark .wrap h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+#sec2 .dark .wrap a{
+    display: block;
+    color: #5e889e;
+    text-transform:capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+#sec2 .dark .wrap a:hover{color: #755562;}
+
+/* sec3 */
+#sec3{
+    width: 100%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: 0% 50%;
+    background-image: url(../img/main2-bg.png);
+}
+#sec3 .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#sec3 .wrap .title{padding-bottom: 40px;}
+#sec3 .wrap .title h3{
+    text-align: center;
+    font-size: 36px;
+    color: #5e889e;
+    text-transform: capitalize;
+}
+
+#sec3 .wrap .cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+#sec3 .wrap .cont .box{
+    width: calc(100% / 4 - 25px);
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: box-shadow 0.5s;
+}
+#sec3 .wrap .cont .box:hover{box-shadow: 0 0 6px #5c5c5c;}
+#sec3 .wrap .cont .box .img{
+    width: 100%; height: 160px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #faa;
+    margin-bottom: 20px;
+}
+#sec3 .wrap .cont .box .text{
+    padding-top: 20px;
+    color: #5c5c5c;
+}
+#sec3 .wrap .cont .box .text h4{
+    font-size: 18px;
+    line-height: 14px;
+}
+#sec3 .wrap .cont .box .text p{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 116px;
+}
+
+#sec3 .wrap .cont .box .button{}
+#sec3 .wrap .cont .box .button button{
+    border: none;
+    background-color:transparent;
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+#sec3 .wrap .cont .box .button button img{
+    display: block;
+    height: 40px;
+    transition: box-shadow 0.5s;
+}
+#sec3 .wrap .cont .box .button button:hover img{box-shadow: 0 0 4px #5c5c5c;}
+
+
+/* sec4 */
+#sec4{margin-bottom: 80px;}
+#sec4 .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#sec4 .wrap img{
+    width: 100%; height: 50px;
+}
+
+/* sec5 */
+#sec5{
+    width: 100%;
+    background-image: url(../img/quick-enquiry.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#sec5 .bgc{
+    padding: 60px 0 60px;
+    width: 100%; height: 100%;
+    background-color: rgba(94,136,158,0.5);
+}
+#sec5 .bgc .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#sec5 .bgc .wrap .title{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform:capitalize;
+    font-weight: bold;
+}
+#sec5 .bgc .wrap .cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#sec5 .bgc .wrap .cont ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#sec5 .bgc .wrap .cont ul li{
+    width: calc(100% / 6 - 20px);
+    height: 100px;
+    margin: 0 10px 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+#sec5 .bgc .wrap .cont ul li a{display: block;}
